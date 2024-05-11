@@ -1,138 +1,69 @@
-# Software Issues
+# 软件问题
 
-**Q: Why can't my compiler find the corresponding device?**
+## 关于ROS1
 
-- A: You need to set up a development environment and install the corresponding project library before you can develop the device.
+**问:终端切换到~/catkin_ws/src，使用git安装更新mercury_ros时，目标路径“mercury_x1_ros”已经存在。原因是什么?**
 
-## 1 About myStudio
+- 答:这意味着在~/catkin_ws/src中已经有一个“mercury_ros”包了。需要提前删除，然后重新执行git操作。
 
-**Q: What is myStudio?**
+**问: rosrun运行时，终端错误提示“could not open port /dev/ttyUSB0: Permission: '/dev/ttyUSB0'”。为什么?**
 
-- A: It is self-developed software by our company. It is a tool for burning or modifying the firmware of existing robotic arms launched by our company.
+- 答:串口权限不足。在终端输入“sudo chmod 777 /dev/ttyUSB0”，授予权限。
 
-**Q: Why can't the device operate normally after I burn firmware into the ATOM terminal?**
+**问:为什么ROS程序不能在VSCode中运行?**
 
-- A: The firmware of the ATOM terminal needs to use our factory firmware. Other unofficial firmware cannot be used during operation. If the device accidentally burns other firmware, you can use the "myCobot firmware burner" to select the ATOM terminal, select the serial port, and choose the ATOMMAIN firmware for burning.
+- 答:由于VSCode终端无法加载到ROS环境中，需要在系统终端中运行。
 
-**Q: Can the drag teaching in the firmware record the gripper movement?**
+**问: rosrun运行时，终端提示“无法注册主节点[http://localhost:11311]:主节点可能尚未运行”。我会继续努力的。”原因是什么?**
 
-- A: It is temporarily impossible to use dragging and teaching to record the movement of the gripper because the gripper belongs to joint No. 7, and our dragging and teaching can only record and play back the motion of joints No. 1-6.
+- 答:运行ROS程序前，需要打开ROS节点，在终端中输入“roscore”。
 
-**Q: Why can't I still drag and teach after burning the minirobot firmware?**
+**问: rosrun运行时，终端错误提示“could not open port /dev/ ttyusb0: No such file or directory: '/dev/ttyUSB1'”。为什么?**
 
-- A: First, check whether the M5Stack-basic firmware and Atom firmware are burned, whether the burned firmware meets the requirements to be achieved, and whether the burned firmware is the latest version.
-- It is recommended to burn the minirobot firmware to version v2.1 and the top AtomMAIN firmware to v4.1 and above (need to support myStudio version v4.3.1 and above).
+- 答:串口错误。需要确认当前机械臂的实际串口。可以通过` ls /dev/tty* `查看。
 
-**Q: What should I do if mycobot’s serial port cannot be recognized on myStudio?**
+**问:在Ubuntu18.04中，' catkin_make '构建代码失败，终端提示' Project 'cv_bridge'指定'/usr/include/opencv'作为包含目录，没有找到。和其他错误信息**
 
-- A: If your computer device does not prompt for the connected robotic arm, please install the serial port driver first.
-- It should also be noted that the Raspberry Pi, Arduino, and Jetson Nano series robotic arms cannot be connected to a laptop using a data cable. You need to use myStudio to burn firmware in the built-in system.
+- 答:配置文件中的OpenCV路径与系统实际路径不匹配。你需要使用sudo命令修改配置文件(路径为“/opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake”)。系统的实际OpenCV路径位于“/usr/include/”路径下。
 
-**Q: Can the dragging teaching recording track be saved to the card?**
+**问:只需克隆mercury_ros包，然后直接运行rosrun程序。出现诸如“package”mercury_ros“not found”之类的错误或诸如无法找到文件之类的错误?**
 
-- A: Currently, it cannot be saved to the memory card. And dragging and teaching can only save one path at a time, and the next recording will overwrite the previous action.
+- 答:新克隆的mercury_ros需要构建ROS环境编译的代码。终端输入
 
-## 2 About RoboFlow
-
-**Q: Can I use RobotStudio software for programming?**
-
-- A: Our own industrial programming software, roboFlow, can be used, but RobotStudio is from ABB and cannot communicate with us.
-
-**Q: What is the reason why the roboFlow software quickly moves beyond the limit?**
-
-- A: It may be that one joint or multiple joints exceed the limit.
-
-**Q: How does roboFlow load a program that has been written?**
-
-- A: After logging in, select program robot and click load program. Clicking run program directly cannot be used, only Pro600 can.
-
-**Q: When using roboFlow on Pro600, the log shows 456 joints stopped. Is this normal?**
-
-- A: This is normal.
-
-## 3 About myCobot Phone Controller
-
-**Q: What version of firmware should be burned into myCobot Phone Controller app?**
-
-- A: You need to burn the Atom firmware AtomMAIN2.5 version in myStudio.
-- **(As of now, the mobile APP control function has been disabled. Please pay attention to the release of myStudio firmware version information for the restart time.)**
-
-## 4 About myBlockly
-
-**Q: Child process exited with code 0 always appears when running myBlockly. Why?**
-
-- A: This is not an error report. A real error report requires a detailed analysis of the specific situation. This string of characters represents the end of the program and returns the binary number 0, which represents termination.
-
-## 5 About Arduino
-
-**Q: An error occurred when running the Arduino program: It corresponds to multiple libraries, and the MycobotSaver.h file cannot be found.**
-
--A: First of all, the first error reported corresponds to multiple libraries, indicating used and unused ones. Just delete one library.
-There is another error that MycobotSaver.h is not found. This is a problem with the library name. You need to change to MyCobotSaver.h.
-This program may have been used before, but the file name has changed later. You can find the MyCobotSaver file, and then copy and paste the MyCobotSaver file you found into the myCobotProBasic folder.
-
-**Q: 280arduino control method**
-
--A: 1. That’s right. Currently, if you use an Uno board, you really need an Arduino to control it. For these two boards, MKRWiFi1010 Mega2560, you can use Python or ROS.
-2. The Uno board is connected to the Arduino board through a DuPont cable and cannot be plugged in directly.
-3. Our Arduino has cases for you to use directly. I will give you the link and screenshot, and you can directly burn it into the Uno board. If you want to develop other Arduino programs by yourself, you can directly use Arduino software to compile the previous case. The tutorial is in this section.
-
-## 6 About ROS1
-
-**Q: When the terminal switches to ~/catkin_ws/src and uses git to install and update mycobot_ros, it appears that the target path "mycobot_ros" already exists. What is the reason?**
-
-- A: It means that there is already a `mycobot_ros` package in `~/catkin_ws/src`. You need to delete it in advance and then perform the git operation again.
-
-**Q: When rosrun is running, the terminal error message shows `could not open port /dev/ttyUSB0: Permission: '/dev/ttyUSB0'`. Why?**
-
-- A: The serial port permissions are not enough. Enter `sudo chmod 777 /dev/ttyUSB0` in the terminal to grant permissions.
-
-**Q: Why can't the ROS program run in VSCode?**
-
-- A: Because the VSCode terminal cannot be loaded into the ROS environment, it needs to be run in the system terminal.
-
-**Q: When rosrun is running, the terminal prompts `Unable to register with master node [http://localhost:11311]: master may not be running yet. Will keep trying`. What is the reason?**
-
-- A: Before running the ROS program, you need to open the ROS node and enter `roscore` in the terminal.
-
-**Q: When rosrun is running, the terminal error message shows `could not open port /dev/ttyUSB0: No such file or directory: '/dev/ttyUSB1'`. Why?**
-
-- A: The serial port is wrong. It is necessary to confirm the actual serial port of the current robot arm. Can be viewed via `ls /dev/tty*`.
-
-**Q: `catkin_make` failed to build the code in Ubuntu18.04, and the terminal prompted `Project 'cv_bridge' specifies '/usr/include/opencv' as an include dir, which is not found.` and other error messages**
-
-- A: The OpenCV path in the configuration file does not match the actual path of the system. You need to
-
- use sudo to modify the configuration file (the path is `/opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake`). The actual OpenCV path of the system is located under the path `/usr/include/`.
-
-**Q: Just clone the mycobot_ros package, and then run the rosrun program directly. An error such as `package 'mycobot_280' not found` or an error such as the file cannot be found appears?**
-
-- A: The newly cloned mycobot_ros needs to build the code for the ROS environment compilation. Terminal input
-
-```bash
+```
+bash
 cd ~/catkin_ws/
 catkin_make
-source devel/setup.bash
+source devel/ setup.bash
 ```
 
-**Q: After compilation is completed, why does the following error appear when running the launch command in a new terminal?**
+## 关于机械臂控制
 
- <img src =../image/17.4.3-1.png
- align = "center">
+**问:给机械臂发送角度或坐标机械臂没有运动**
 
-- A1: The system does not add ROS environment variables, so every time you open a new terminal, you must source:
+- 答：使用`get_angles()`读取机械臂的角度，若角度返回为空，则检查机械臂是否上电，使用`power_on()`对机械臂进行上电使能；检查端口号是否使用正确。
+若有角度，查看角度是否超出运动范围见表1，如果超出范围，使用`release_all_servos()`放松所有关节（注意关节放松后会下坠，需要接住），对齐1~5、7关节零刻度线，6关节与零刻度线90度垂直。再使用`focus_all_servos()`锁定关节，再使用`set_servo_calibration(1)~set_servo_calibration(7)`依次校准各关节零点，再使用`get_angles()`读取当前关节角度，如返回数据为[0, 0, 0, 0, 0, 90, 0]则为校准成功，否则重复之前的校准步骤。
 
-```bash
-cd ~/catkin_ws/
-source devel/setup.bash
-```
+<center> 表1-1 各关节角度可运动范围
 
-- A2: The system adds ROS environment variables, and there is no need to execute source every time you open a new terminal:
+|   关节   | 范围   |
+|  :----:  | :----:  |
+| J1  | -175 ~ +175 |
+| J2  | -65 ~ +115 |
+| J3| -175 ~ +175 |
+| J4  | -180 ~ +10 |
+| J5| -175 ~ +175 |
+| J6| -20 ~ + 173 |
+| J7| -180 ~ +180 |
 
-```bash
-# Noetic for Ubuntu20.04 system
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-```
+</center>
 
-- A3: It may be that the file name in the command is inconsistent with the actual file name in the mycobot_ros package. Please check carefully whether the command is correct.
+**问:摄像头无法打开**
+
+- 答：打开本地相机查看是否可以切换到左右臂摄像头，如有某个摄像头无法查看，则重新拔插USB口或者更换USB口。
+若可以切换到左右摄像头，检查摄像头端口是否发生变化(在重启后，端口可能发生变化)
+
+**问:自适应夹爪无法控制**
+
+- 答：查看自适应夹爪的电源指示灯，正常时指示灯应为常亮状态，若指示灯出现闪烁情况，请重新拔插夹爪与机械臂的连接线，指示灯恢复常亮状态则正常。
+若指示灯为常亮状态仍无法控制，使用`set_gripper_mode(0)`更改夹爪使用模式。

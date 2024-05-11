@@ -1,48 +1,36 @@
-# Drive Related
 
-## 1 About python
+# 驱动器相关
 
-**Q: send_coords([x,y,z,rx,ry,rz], speed, 1) What do the parameters in this API mean? What do rx, ry, and rz correspond to Euler angles? What is the rotation order of Euler angles? And what is the value range of each parameter?**
+## 1 关于python
 
-- A: The parameters in the previous array are the coordinates of the end of the myCobot320, speed is the speed, and the last parameter is the motion mode. rx, ry, and rz should correspond to rpy, that is, corresponding to roll, pitch, and yaw respectively. The order of Euler angles is zyx, and zyx is its own coordinate. The value range of x, y, z is -350~350,-350~350,-41~523.9 (the value range is undefined, if the range is exceeded, the inverse kinematics no solution prompt will be returned), and the value range of rx, ry, and rz is -180~180.
+**问： send_base_coords（[x，y，z，rx，ry，rz]， speed） 此 API 中的参数是什么意思？rx、ry 和 rz 对应于欧拉角什么？欧拉角的旋转顺序是什么？每个参数的取值范围是多少？**
 
-**Q: Are sample tutorials for the python API provided?**
+- 答：前面数组中的参数是 mercury X1 末端的坐标，speed 是速度。rx、ry 和 rz 应对应 RPY，即分别对应滚动、俯仰和偏航。欧拉角的阶数是 zyx，zyx 是它自己的坐标。x、y、z的取值范围。为-350\~350，-350\~350，-41\~523.9（取值范围未定义，如果超过该范围，将返回逆运动学无解提示），rx、ry、rz的取值范围为-180~180。
 
-- A: Yes, there is test code in the test folder of github, which can be executed with the terminal. "https://github.com/elephantrobotics/pymycobot/tree/main/demo/myCobot_320_demo"
+**问：不同版本的机械臂的 python api 是否相同？**
 
-**Q: Are the python apis the same for different versions of robotic arms?**
+- 答：API 是一样的。
 
-- A: The API is the same.
+## 2 关于ROS
+**问：您能提供 rviz 模型的文件和编程示例吗？**
 
-## 2 About ROS
+- 答：它可以在我们的 github 上找到。
+“https://github.com/elephantrobotics/mercury_ros2”
 
-**Q: How do a microcontroller-based myCobot and a microprocessor-based myCobot run ROS?**
+**问：为什么使用 ROS 启动 rviz 模型文件时，报错权限“/dev/ttyUSB0”？**
 
-- A: The use of ROS for a microcontroller-based myCobot is currently on Ubuntu, and you can also develop your own ROS. A microprocessor-based myCobot have its own ROS environment and can be used directly.
-
-**Q: Can a microprocessor-based myCobot connect to a PC to use ROS and moveit?**
-
-- A: The current open source data is not controlled by direct communication. It can be implemented by modifying the existing node files through ros + socket.
-
-**Q: Can you provide files and programming examples of the rviz model?**
-
-- A: It is available on our github.
-"https://github.com/elephantrobotics/mycobot_ros"
-
-**Q: Why is the error permission denied: '/dev/ttyUSB0' reported when using ROS to start the rviz model file?**
-
-- A: It is because the serial port permission is not given. You should type sudo chmod 777 port name in the terminal.
-  for example:
+- 答：这是因为没有给出串口权限。您应该在终端中键入 sudo chmod 777 端口名称。
+  例如：
   ```
   sudo chmod 777 /dev/ttyUSB0
   ```
 
-**Q: Why is the error _init_() takes exactly 2 arguments (3 given) reported when running the slider control and model follow commands of ROS?**
+**问：为什么在运行 ROS 的滑块控件和模型遵循命令时，错误 \_init_() takes exactly 2 arguments (3 given)？**
 
-- A: The pymycobot library is not installed and started.
+- 答：pymycobot 库未安装和启动。
 
-**Q: Q: When using ROS, why is the myCobot angle inconsistent with the model angle after opening the rviz model?**
+**问：使用 ROS 时，为什么打开 rviz 模型后 mercury_B1 角度与模型角度不一致？**
 
-- A: It is very likely that the zero position of the myCobot is not calibrated, and the zero position of the myCobot needs to be calibrated.
+- 答：很有可能mercury_B1的零位没有校准，mercury_B1的零位需要校准。
 
-[← Previous Page](../3.4-FAQsandSolutions.md) | [Next Page →](./software.md)
+[← 上一页](../3.4-FAQsandSolutions.md) | [下一页 →](./software.md)

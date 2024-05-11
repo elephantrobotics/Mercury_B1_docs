@@ -1,26 +1,26 @@
-# User Notes
+# 用户须知
 
 <img src="../../resources/3-UserNotes/3-usermustknows-1.png" alt="img-1" width="800" height=“auto” /> <br>
 
-This section is crucial for every user of this product and must be read carefully. It includes essential information on product use, transportation, storage, and maintenance to ensure safety and efficiency during operation. Additionally, it outlines liability for product failure or damage resulting from non-compliance with these guidelines. The User Notice is divided into subsections, each providing detailed guidance on different topics:
+本节对于本产品的每个用户都至关重要，必须仔细阅读。它包括有关产品使用、运输、储存和维护的基本信息，以确保操作过程中的安全和高效。此外，它还概述了因不遵守这些准则而导致的产品故障或损坏的责任。用户须知分为几个小节，每个小节提供有关不同主题的详细指导：
 
 ## 
 
-- [Safety Information](3.1-SafetyInstruction.md)    
-    Includes liability, safety warning signs, general safety rules, personal safety, and emergency response.
+- [安全须知](3.1-SafetyInstruction.md)    
+    包括责任、安全警告标志、一般安全规则、人身安全和应急响应。
 
-- [Transportation and Storage](3.2-TransportandStorage.md)    
-    Describes packaging, transport, and long-term storage requirements, along with liability.
+- [运输和储存](3.2-TransportandStorage.md)    
+    描述包装、运输和长期储存要求以及责任。
 
-- [Maintenance and Care](3.3-MaintenanceandCare.md)  
-    Offers guidance on routine maintenance to extend product lifespan.
+- [维护和保养](3.3-MaintenanceandCare.md)  
+    提供日常维护指导，以延长产品使用寿命。
 
-- [FAQs and Solutions](3.4-FAQsandSolutions.md)    
-    Provides a navigable guide for quickly resolving common issues.
+- [常见问题及解决方案](3.4-FAQsandSolutions.md)    
+    提供快速解决常见问题的导航指南。
 
-By thoroughly reading this section, users will better understand how to use the product safely and efficiently, maximizing performance and lifespan.
+通过仔细阅读本节，用户将更好地了解如何安全有效地使用产品，最大限度地提高性能和使用寿命。
 
 ----
 
-If you have already read all the content in this chapter, please proceed to the next chapter.   <br>
-[← Previous Chapter](/2-ProductFeature/2.1_320_M5_product/M5.md) | [Next Chapter →](/4-FirstInstallAndUse/4.2-M5/4.2_320_M5_firstUse.md)
+如果您已经阅读了本章的全部内容，请继续阅读下一章。   <br>
+[← 上一章](/2-ProductFeature) | [下一章 →](/4-FirstInstallAndUse)
