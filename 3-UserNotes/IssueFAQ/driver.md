@@ -10,5 +10,26 @@
 
 - A: The API is the same.
 
+## 2 About ROS
+**Q: Can you provide documentation and programming examples for the rviz model? **
+
+- A: It can be found on our github.
+"https://github.com/elephantrobotics/mercury_ros2"
+
+**Q: Why is the permission "/dev/ttyUSB0" error reported when using ROS to start the rviz model file?**
+
+- A: This is because serial port permissions are not given. You should type sudo chmod 777 port name in the terminal.
+   For example:
+   ```
+   sudo chmod 777 /dev/ttyUSB0
+   ```
+
+**Q: Why does the error \_init_() take exactly 2 arguments (3 given) when running ROS's slider control and model follow command?**
+
+- A: The pymycobot library is not installed and started.
+
+**Q: When using ROS, why is the angle of mercury_B1 inconsistent with the angle of the model after opening the rviz model?**
+
+- A: It is very likely that the zero position of mercury_B1 is not calibrated, and the zero position of mercury_B1 needs to be calibrated.
 
 [← Previous](./3.4-faqsandsolutions.md) | [Next page →](./software.md)

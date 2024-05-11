@@ -1,4 +1,41 @@
-# Software problem
+# Software issues
+
+## About ROS1
+
+**Question: When the terminal switches to ~/catkin_ws/src and uses git to install and update mercury_ros, the target path "mercury_x1_ros" already exists. what is the reason?**
+
+- A: This means there is already a "mercury_ros" package in ~/catkin_ws/src. You need to delete it in advance and then perform the git operation again.
+
+**Question: When rosrun is running, the terminal error prompts "could not open port /dev/ttyUSB0: Permission: '/dev/ttyUSB0'". Why?**
+
+- A: The serial port permissions are insufficient. Enter "sudo chmod 777 /dev/ttyUSB0" in the terminal to grant permissions.
+
+**Question: Why can’t ROS programs run in VSCode?**
+
+- A: Since the VSCode terminal cannot be loaded into the ROS environment, it needs to be run in the system terminal.
+
+**Question: When rosrun is running, the terminal prompts "Unable to register the master node [http://localhost:11311]: The master node may not be running yet." I will continue to work hard. "what is the reason?**
+
+- A: Before running the ROS program, you need to open the ROS node and enter "roscore" in the terminal.
+
+**Question: When rosrun is running, the terminal error prompts "could not open port /dev/ ttyusb0: No such file or directory: '/dev/ttyUSB1'". Why?**
+
+- A: Serial port error. It is necessary to confirm the actual serial port of the current robot arm. Can be viewed via ` ls /dev/tty* `.
+
+**Q: In Ubuntu18.04, 'catkin_make' fails to build the code, and the terminal prompts that 'Project 'cv_bridge' specifies '/usr/include/opencv' as the include directory and is not found. and other error messages**
+
+- A: The OpenCV path in the configuration file does not match the actual path of the system. You need to use the sudo command to modify the configuration file (the path is "/opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake"). The actual OpenCV path of the system is located under the "/usr/include/" path.
+
+**Q: Just clone the mercury_ros package and run the rosrun program directly. Getting errors like "package"mercury_ros"not found" or errors like file cannot be found?**
+
+- A: The newly cloned mercury_ros needs to build the code compiled by the ROS environment. Terminal input
+
+```
+bash
+cd ~/catkin_ws/
+catkin_make
+source devel/ setup.bash
+```
 
 ## About robotic arm control
 
