@@ -1,20 +1,18 @@
-# First installation and use
+# 首次安装和使用
 
-![1](../../resources/4-FirstInstallAndUse/1.jpg)
-
-- **Thank you for choosing our product**
+ - **谢谢您选择我们的产品**
   
-Before we begin, we would like to sincerely thank you for choosing our product. We are committed to providing you with an excellent user experience.
+在开始之前，我们要衷心感谢您选择我们的产品。我们致力于为您提供出色的用户体验。
 
-- **First time use and problem handling**
+ - **首次使用和问题处理**
   
-This chapter will introduce in detail the initial use of the product after receiving it, and provide relevant information for solving problems to ensure that you have no worries during use.
+本章将在收到产品后详细介绍该产品的初始使用，并提供有关解决问题的相关信息，以确保您在使用过程中不必担心。
 
-- **Jump to each section**
-   - [4.1 Product Standard List](./4.1-ProductStandardList.md)
-   - [4.2 Product Unboxing Guide](./4.2-ProductUnboxingGuide.md)
-   - [4.3 Power-on Test Guide](./4.3-Power-onTestGuide.md)
+ - **跳到每个部分**
+    - [4.1产品标准清单](./4.1-ProductStandardList.md)
+   - [4.2 产品开箱指南](./4.2-ProductUnboxingGuide.md)
+   - [4.3 开机检测指南](./4.3-Power-onTestGuide.md)
 
 ---
 
-[← Previous Chapter](../3-UserNotes/3-UserNotes.md) | [Next Chapter →](/5-BasicApplication/README.md)
+[← 上一章](../3-UserNotes/3-UserNotes.md) | [下一章r →](/5-BasicApplication/README.md)
