@@ -1,0 +1,957 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.2 ROS1 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-password-z/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11.1.1-EnvironmentBuilding.html" />
+    
+    
+    <link rel="prev" href="../../6-SDKDevelopment/6.1-Python/6.1.3-PythonDemo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">Catalogue</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-ProductIntroduction/">
+            
+                <a href="../../1-ProductIntroduction/">
+            
+                    
+                    1 Product Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../1-ProductIntroduction/1.1-DesignPhilosophy.html">
+            
+                <a href="../../1-ProductIntroduction/1.1-DesignPhilosophy.html">
+            
+                    
+                    1.1 Design Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../1-ProductIntroduction/1.2-ApplicationScenario.html">
+            
+                <a href="../../1-ProductIntroduction/1.2-ApplicationScenario.html">
+            
+                    
+                    1.2 Application Scenario
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-ProductFeature/">
+            
+                <a href="../../2-ProductFeature/">
+            
+                    
+                    2 Product Feature
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../2-ProductFeature/2.1-MachineSpecification.html">
+            
+                <a href="../../2-ProductFeature/2.1-MachineSpecification.html">
+            
+                    
+                    2.1 Functional Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../2-ProductFeature/2.2-ControlCoreParameter.html">
+            
+                <a href="../../2-ProductFeature/2.2-ControlCoreParameter.html">
+            
+                    
+                    2.2 Controller Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../2-ProductFeature/2.3-MechanicalStructureParameter.html">
+            
+                <a href="../../2-ProductFeature/2.3-MechanicalStructureParameter.html">
+            
+                    
+                    2.3 Structural Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../2-ProductFeature/2.4-ElectricalCharacteristicParameter.html">
+            
+                <a href="../../2-ProductFeature/2.4-ElectricalCharacteristicParameter.html">
+            
+                    
+                    2.4 Electronic Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../3-UserNotes/">
+            
+                <a href="../../3-UserNotes/">
+            
+                    
+                    3 User Notes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../3-UserNotes/3.1-SafetyInstruction.html">
+            
+                <a href="../../3-UserNotes/3.1-SafetyInstruction.html">
+            
+                    
+                    3.1 Safety Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../3-UserNotes/3.2-TransportandStorage.html">
+            
+                <a href="../../3-UserNotes/3.2-TransportandStorage.html">
+            
+                    
+                    3.2 Transport and Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../3-UserNotes/3.3-MaintenanceandCare.html">
+            
+                <a href="../../3-UserNotes/3.3-MaintenanceandCare.html">
+            
+                    
+                    3.3 Maintenance and Care
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../3-UserNotes/3.4-FAQsandSolutions.html">
+            
+                <a href="../../3-UserNotes/3.4-FAQsandSolutions.html">
+            
+                    
+                    3.4 FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../3-UserNotes/IssueFAQ/how_to_ask.html">
+            
+                <a href="../../3-UserNotes/IssueFAQ/how_to_ask.html">
+            
+                    
+                    1 How To Ask Questions Gracefully
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../../3-UserNotes/IssueFAQ/driver.html">
+            
+                <a href="../../3-UserNotes/IssueFAQ/driver.html">
+            
+                    
+                    2 Drive Related
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../../3-UserNotes/IssueFAQ/software.html">
+            
+                <a href="../../3-UserNotes/IssueFAQ/software.html">
+            
+                    
+                    3 Software Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../../3-UserNotes/IssueFAQ/hardware.html">
+            
+                <a href="../../3-UserNotes/IssueFAQ/hardware.html">
+            
+                    
+                    4 Hardware Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-FirstInstallAndUse/">
+            
+                <a href="../../4-FirstInstallAndUse/">
+            
+                    
+                    4 First Install and Use
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-FirstInstallAndUse/4-FirstInstallAndUse.html">
+            
+                <a href="../../4-FirstInstallAndUse/4-FirstInstallAndUse.html">
+            
+                    
+                    4.1 Product Standard List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-FirstInstallAndUse/4.2-ProductUnboxingGuide.html">
+            
+                <a href="../../4-FirstInstallAndUse/4.2-ProductUnboxingGuide.html">
+            
+                    
+                    4.2 Product Unboxing Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-FirstInstallAndUse/4.3-Power-onTestGuide.html">
+            
+                <a href="../../4-FirstInstallAndUse/4.3-Power-onTestGuide.html">
+            
+                    
+                    4.3 Power-on Test Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../6-SDKDevelopment/">
+            
+                <a href="../../6-SDKDevelopment/">
+            
+                    
+                    5 SDK Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../6-SDKDevelopment/6.1-ApplicationBasePython.html">
+            
+                <a href="../../6-SDKDevelopment/6.1-ApplicationBasePython.html">
+            
+                    
+                    5.1 Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../6-SDKDevelopment/6.1-Python/6.1.1-EnvironmentConfiguration.html">
+            
+                <a href="../../6-SDKDevelopment/6.1-Python/6.1.1-EnvironmentConfiguration.html">
+            
+                    
+                    1 Environment Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../6-SDKDevelopment/6.1-Python/6.1.2-ApplicationBasePython.html">
+            
+                <a href="../../6-SDKDevelopment/6.1-Python/6.1.2-ApplicationBasePython.html">
+            
+                    
+                    2 Introduction to API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../10-ApplicationBasePython/10.3-PythonDemo.html">
+            
+                <a href="../../10-ApplicationBasePython/10.3-PythonDemo.html">
+            
+                    
+                    3 python demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../6-SDKDevelopment/6.1-Python/61.4-Drag_teach.html">
+            
+                <a href="../../6-SDKDevelopment/6.1-Python/61.4-Drag_teach.html">
+            
+                    
+                    3 Drag to teach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../6-SDKDevelopment/6.1-Python/6.1.3-PythonDemo.html">
+            
+                <a href="../../6-SDKDevelopment/6.1-Python/6.1.3-PythonDemo.html">
+            
+                    
+                    4 Use Cases
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    5.2 ROS1
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="11.1.1-EnvironmentBuilding.html">
+            
+                <a href="11.1.1-EnvironmentBuilding.html">
+            
+                    
+                    1 Environment Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="11.1.2-ROS_Basics.html">
+            
+                <a href="11.1.2-ROS_Basics.html">
+            
+                    
+                    2 ROS Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="11.1.3-RvizIntroduction.html">
+            
+                <a href="11.1.3-RvizIntroduction.html">
+            
+                    
+                    3 Rviz usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="11.1.4-BasicFunction.html">
+            
+                <a href="11.1.4-BasicFunction.html">
+            
+                    
+                    4 Basic Function Case
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../11.2-ROS2/">
+            
+                <a href="../11.2-ROS2/">
+            
+                    
+                    5.3 ROS2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../11.2-ROS2/11.2.1-EnvironmentBuilding.html">
+            
+                <a href="../11.2-ROS2/11.2.1-EnvironmentBuilding.html">
+            
+                    
+                    1 Environment Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../11.2-ROS2/11.2.2-ROS2_Basics.html">
+            
+                <a href="../11.2-ROS2/11.2.2-ROS2_Basics.html">
+            
+                    
+                    2 ROS2 Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../11.2-ROS2/11.2.3-Rviz2Introduction.html">
+            
+                <a href="../11.2-ROS2/11.2.3-Rviz2Introduction.html">
+            
+                    
+                    3 Rviz2 usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../11.2-ROS2/11.2.4-BasicFunction.html">
+            
+                <a href="../11.2-ROS2/11.2.4-BasicFunction.html">
+            
+                    
+                    4 Basic Function Case
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.html">
+            
+                <a href="../../7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.html">
+            
+                    
+                    6 Examples of Robots Using
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../9-AboutUs/">
+            
+                <a href="../../9-AboutUs/">
+            
+                    
+                    7 About Us
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../9-AboutUs/9.1-company.html">
+            
+                <a href="../../9-AboutUs/9.1-company.html">
+            
+                    
+                    7.1 Elephant Robotics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../9-AboutUs/9.2-contact.html">
+            
+                <a href="../../9-AboutUs/9.2-contact.html">
+            
+                    
+                    7.2 Contact us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">In this Chapter:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >5.2 ROS1</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="ros">ROS</h1>
+<p>ROS is an open-source meta-operating system used for robots. It provides an operating system with expected services, including hardware abstraction, low-level device control, implementation of common functions, messages transfered between processes, and package management. It also provides the tools and library functions needed to obtain, compile, write, and run codes across computers.</p>
+<p>The &quot;graph&quot; of ROS runtime is a loosely coupled peer-to-peer process network based on a ROS communication infrastructure. ROS implements several different communication methods, including a services mechanism based on synchronous RPC-style communication, a topics mechanism based on asynchronous streaming media data, and a parameter server for data storage.</p>
+<p>ROS is not a real-time framework, but it can be embedded in real-time programs. Willow Garage&apos;s PR2 robot uses a system called pr2_etherCAT to send or receive ROS messages in real time. ROS may also be seamlessly integrated with Orocos real-time toolkits.</p>
+<p><strong>ROS Logo</strong> &#xFF1A;</p>
+<p><img src="../../resources/11-ApplicationBaseROS/image/Ros-icon.png" alt="ROS&#x56FE;&#x6807;"></p>
+<h2 id="1-design-goals-and-characteristics-of-ros">1 Design goals and characteristics of ROS</h2>
+<p>Many people ask &quot;what are differences between ROS and other robot software platforms?&quot; This question is difficult to answer. Because ROS is not a framework that integrates most functions or features. In fact, the main goal of ROS is to provide code reuse support for robot R&amp;D. ROS is a framework (i.e. nodes) for distributed processes, which are encapsulated in program and function packages that can be easily shared and distributed. ROS also supports a federated system similar to a code repository, and this system also enables the collaboration and distribution of a project. This design enables the development and realization of a project to to be decided completely independently from the file system to the user interface (no limit by ROS). At the same time, all projects can be integrated with the basic tools of ROS.</p>
+<p>To support the primary goals of sharing and collaboration, the ROS framework has several other features:</p>
+<ul>
+<li>Lean: ROS is designed to be as lean as possible so that codes written for ROS can be used with other robot software frameworks. The inevitable conclusion from this is that ROS can be easily integrated into other robot software platforms: ROS can already be integrated with OpenRAVE, Orocos and Player.</li>
+<li>ROS insensitive libraries: The preferred development model of ROS is written with clean library functions that do not depend on ROS.</li>
+<li>Language independence: The ROS framework can simply be implemented in any modern programming language. ros has implemented Python version, C++ version and Lisp version. It also has experimental libraries for Java and Lua versions.</li>
+<li>Loose coupling: The function modules in ROS are encapsulated in independent function packages or meta-function packages, which are easy to share. The modules in the function package are run in units of nodes. With ROS standard IO used as the interface, developers does not need to pay attention to the internal implementation of the module, as long as they understand the interface rules, they can achieve reuse and point-to-point loose coupling between modules.</li>
+<li>Convenient testing: ROS has a built-in unit/integration testing framework called rostest, which can easily install or uninstall test modules.</li>
+<li>Scalable: ROS is applicable to large runtime systems and large development processes.</li>
+<li>Free and open-source: It has many developers and many function packages.</li>
+</ul>
+<h2 id="2-why-ros-is-used">2 Why ROS is used?</h2>
+<p>Through ROS, we can realize the simulated control of robot arms in a virtual environment.</p>
+<p>we will visualize robot arms through <strong>rviz</strong>, operates our robot arms in a variety of ways.</p>
+<p>We will learn how to control our products through the platform in ros in the following chapters.</p>
+<h1 id="moveit">MoveIt</h1>
+<p><strong>MoveIt</strong> is currently the most advanced software for movement operations of robot arms and has been used for more than 100 robots. It integrates the latest achievements in motion planning, control, 3D perception, motion control, control and navigation, provides an easy-to-use platform for developing advanced robot applications, and provides an integrated software platform for design, and integration assessment of new robot products in the fields of industry, commerce, R&amp;D, etc.</p>
+<p><strong>MoveIt Logo</strong> :</p>
+<p><img src="../../resources/11-ApplicationBaseROS/image/moveit-icon.png" alt="moveit&#x56FE;&#x6807;"></p>
+<h2 id="1-introduction">1 Introduction</h2>
+<p>MoveIt is an integrated development platform in ROS, which consists of a variety of functional packages for manipulating robot arms, including motion planning, operation, control, inverse kinematics, 3D perception, collision detection, etc.</p>
+<p>The following figure shows the high-level structure of the main node <strong>move_group</strong> provided by Moveit. It is like a combiner: all the individual components are integrated together, providing a series of actions and services for users to use.</p>
+<p><img src="../../resources/11-ApplicationBaseROS/image/moveit-3.png" width="500" align="center"></p>
+<h2 id="2-user-interface">2 User interface</h2>
+<p>The user may access the operations and services provided by move_group in three ways:</p>
+<ul>
+<li>In C++, you may use move_group easily by using move_group_interface package.</li>
+<li>In Python, use the moveit_commander package.</li>
+<li>Via GUI: use Rviz (ROS visualization tool) of Motion-commander.</li>
+</ul>
+<p>move_group can be configured using the ROS parameter server, from which the robot&apos;s URDF and SRDF can also be obtained.</p>
+<h2 id="3-configuration">3 Configuration</h2>
+<p>move_group is a ROS node. It uses the ROS parameter server to obtain three kinds of information:</p>
+<ul>
+<li>URDF - move_group looks for the robot_description parameter in the ROS parameter server to get the robot&apos;s URDF.</li>
+<li>SRDF - move_group looks for the robot_description_semantic parameter in the ROS parameter server to get the robot&apos;s SRDF. SRDF is typically created by the user using an MoveIt Setup Assistant.</li>
+<li>MoveIt configuration - move_group will look in the ROS parameter server for additional MoveIt-specific configurations, including joint constraint, kinematics, motion planning, perception, and other information. w The configuration files for these components are automatically generated by the MoveIt Setup Assistant and stored in the configuration directory of the robot&apos;s corresponding MoveIt configuration package. For the use of configuration assistant, please refer to: <a href="https://moveit.picknik.ai/main/doc/examples/setup_assistant/setup_assistant_tutorial.html" target="_blank">MoveIt Setup Assistant</a></li>
+</ul>
+<hr>
+<p><a href="../../10-ApplicationBasePython/README.md">&#x2190; Previous Section</a> | <a href="11.1.1-EnvironmentBuilding.html">Next Page &#x2192;</a></p>
+ <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="../../6-SDKDevelopment/6.1-Python/6.1.3-PythonDemo.html" class="navigation navigation-prev " aria-label="Previous page: 4 Use Cases">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="11.1.1-EnvironmentBuilding.html" class="navigation navigation-next " aria-label="Next page: 1 Environment Building">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"5.2 ROS1","level":"2.1.2","depth":2,"next":{"title":"1 Environment Building","level":"2.1.2.1","depth":3,"path":"11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.md","ref":"11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.md","articles":[]},"previous":{"title":"4 Use Cases","level":"2.1.1.5","depth":3,"path":"6-SDKDevelopment/6.1-Python/6.1.3-PythonDemo.md","ref":"./6-SDKDevelopment/6.1-Python/6.1.3-PythonDemo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"themeFexa":{"showHome":false,"showNavigator":false}},"plugins":["chapter-fold","expandable-chapters","back-to-top-button","password-z","-lunr","-search","search-pro","theme-fexa","splitter","-sharing","klipse","livereload"],"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"password-z":{},"theme-fexa":{"search-placeholder":"Input Keywords to Search","logo":"/photo/logo.png","favicon":"./favicon.ico"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"klipse":{"myConfigKey":"it's the default value"},"password":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11-ApplicationBaseROS/11.1-ROS1/README.md","mtime":"2024-05-23T01:37:17.490Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-23T01:57:43.466Z"},"basePath":"../..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-password-z/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+
