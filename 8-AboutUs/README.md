@@ -128,7 +128,7 @@ support@elephantrobotics.com
 我们将在 1-2 个工作日内给予答复；
 
 **微信**:  
-我们只为通过微信购买 myArm M&C 系列产品的用户提供一对一服务。
+我们只为通过微信购买产品的用户提供一对一服务。
 
 <img src="../resources/9-AboutUs/image/微信图片_20220225152258.jpg" alt="img-1" width="900" height=“auto” /><br>
 
