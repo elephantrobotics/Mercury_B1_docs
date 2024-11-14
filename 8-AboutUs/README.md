@@ -110,7 +110,7 @@ support@elephantrobotics.com
 We will respond within 1-2 working days.
 
 **WeChat**:  
-We provide one-on-one service only for users who purchase myArm M&C series products through WeChat.
+We provide one-on-one service only for users who purchase products through WeChat.
 
 <img src="../resources/9-AboutUs/image/微信图片_20220225152258.jpg" alt="img-1" width="900" height="auto" /><br>
 
