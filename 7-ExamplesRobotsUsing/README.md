@@ -4,9 +4,13 @@ This chapter presents classic robotic arm use cases to demonstrate the applicati
 
 **Mobile grabbing wooden block case**
 
+Related dependency files are available at
+https://github.com/elephantrobotics/mercury_demo to download
+
 ```python
+import time
+from pymycobot import Mercury
 from uvc_camera import UVCCamera
-from arm_control import *
 from marker_utils import *
 import stag
 
@@ -21,7 +25,7 @@ mtx, dist = camera_params["mtx"], camera_params["dist"]
 # QR code size
 MARKER_SIZE = 32
 # Set left arm port
-ml = Mercury("/dev/ttyTHS0")
+ml = Mercury("/dev/left_arm")
 
 
 # Convert rotation matrix to Euler angles
