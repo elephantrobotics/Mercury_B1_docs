@@ -1,6 +1,6 @@
 # 1.1 Design Concept
 
-The Mercury B1 dual-arm humanoid robot has a total of 17 degrees of freedom. It is equipped with two A1 seven-axis robotic arms, capable of independent single-arm operation and coordinated dual-arm operation. The head is equipped with a 9-inch high-definition LCD touch screen, supporting multi-point control and user-customizable facial expressions. It also features the NVIDIA Jetson Xavier edge computing core as the main control module. With AI performance up to 21 TOPS combined with an integrated 3D camera, it can perform 2D/3D machine vision guidance, grasping, and VR remote operation.
+The Mercury B1 dual-arm humanoid robot has a total of 17 degrees of freedom. It is equipped with two A1 seven-axis robotic arms, capable of independent single-arm operation and coordinated dual-arm operation. The head is equipped with a 9-inch high-definition LCD touch screen, supporting multi-point control and user-customizable facial expressions. It also features the NVIDIA Jetson Orin Nano 8GB edge computing core as the main control module. With AI performance up to 40 TOPS combined with an integrated 3D camera, it can perform 2D/3D machine vision guidance, grasping, and VR remote operation.
 
 | Feature | Description |
 | --- | --- |
@@ -22,7 +22,7 @@ The design concept of the Mercury B1 humanoid robot stems from a deep understand
 | --- | --- |
 | Harmonic Module | Provides high precision, high inertia, low weight |
 | Hollow Wiring | Facilitates maintenance and upgrades |
-| NVIDIA Jetson Xavier | Main control collaborates with secondary control |
+| NVIDIA Jetson Orin Nano 8GB | Main control collaborates with secondary control |
 | 2D Vision | Enhances perception capabilities |
 
 ## Design Goals
