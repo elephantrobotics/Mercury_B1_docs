@@ -20,7 +20,7 @@
 | Joint Brake Type | Electromagnetic Friction Plate |
 | CPU | 6-core Arm v8.2 64-bit CPU |
 | GPU | 384-core Volta™ GPU |
-| Computing Power | 40 TOPS |
+| Computing Power | 67 TOPS |
 | Material | Carbon Fiber, Aluminum Alloy, Engineering Plastics |
 | 3D Camera | Obi Nakakotsu Deeyea |
 | Microphone Array | Linear 4-microphone, 5 meters 180° pickup |
@@ -61,11 +61,11 @@
 
 | Index | Parameter |
 | :--------------:| :----------------: |
-| Main Control | Jetson Orin Nano 8GB |
-| Main Model | Jetson Orin Nano 8GB |
+| Main Control | Jetson Orin Nano SUPER 8GB |
+| Main Model | Jetson Orin Nano SUPER 8GB |
 | Central Processor | 6-core NVIDIA Carmel ARM®v8.2 64-bit CPU <br> 6MB L2 + 4MB L3 |
 | Graphics Processor | 384-core NVIDIA Volta™ GPU with 48 Tensor Cores |
-| Computing Power | 40 TOPS |
+| Computing Power | 67 TOPS |
 | Storage | 16 GB eMMC 5.1 |
 | CSI Camera | 2 CSI Cameras |
 | Network | 10/100/1000 BASE-T Ethernet |
