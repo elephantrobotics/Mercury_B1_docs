@@ -22,7 +22,7 @@
 | GPU | 384-core Volta™ GPU |
 | Computing Power | 67 TOPS |
 | Material | Carbon Fiber, Aluminum Alloy, Engineering Plastics |
-| 3D Camera | Obi Nakakotsu Deeyea |
+| 3D Camera | dabai DC1 |
 | Microphone Array | Linear 4-microphone, 5 meters 180° pickup |
 | IO | 24V 6 inputs, 6 outputs |
 | Screen | 9-inch Touch Screen |
