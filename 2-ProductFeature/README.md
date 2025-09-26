@@ -20,9 +20,9 @@
 |关节制动式|电磁摩擦片式|
 |CPU |6核Arm v8.2 64位CPU |
 |GPU|384 核 Volta™ GPU |
-|算力 |67 TOPS|
-|材质|碳纤维、铝合金、工程塑料|
-|3D相机|dabai DC1 |
+|算力 |21 TOPS|
+|材质|铝合金，工程塑料
+|3D相机|奥比中光 Dabai |
 |麦克风阵列| 线性4麦克风，5米180°拾音|
 |IO |24V 6 输入，6 输出 |
 |屏幕|9寸触摸屏
@@ -63,11 +63,11 @@
 
 | 指标| 参数|
 | :--------------:| :----------------: |
-| 主控| Jetson Orin Nano SUPER 8GB |
+| 主控| NVIDIA Jetson Xavier NX 8GB |
 | 主模型| Jetson Orin Nano SUPER 8GB |
 | 中央处理器 | 6 核 NVIDIA Carmel ARM®v8.2 64 位 CPU <br> 6MB L2 + 4MB L3 |
 | 图形处理器 | 具有 48 个 Tensor 核心的 384 核 NVIDIA Volta™ GPU|
-| 算力 | 67 TOPS |
+| 算力 | 21 TOPS |
 | 存储| 16 GB eMMC 5.1 |
 | CSI 摄像机 | 2 个 CSI 摄像机 |
 | 网络| 10/100/1000 BASE-T 以太网|
