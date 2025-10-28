@@ -46,9 +46,7 @@
 | C++ | Supported |
 | C# | Supported |
 | JavaScript | Supported |
-| myblockly | Supported |
-| Arduino | Supported |
-| mystudio | Supported |
+| mystudio pro | Supported |
 | Serial Control Protocol | Supported |
 | TCP/IP | Supported |
 | MODBUS | Supported |
@@ -186,3 +184,4 @@ The definitions of each tool I/O port are shown in the table below. Note that th
 If you have read all the content of this chapter, you can continue to the next chapter.
 
 [← Previous Chapter](../1-ProductIntroduction/README.md) | [Next Chapter →](../3-UserNotes/README.md)
+
