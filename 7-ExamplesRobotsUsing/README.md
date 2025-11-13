@@ -175,6 +175,7 @@ if __name__ == "__main__":
 ```
 
 **脚本及手套控制灵巧手案例**
+
 ## 案例1：脚本控制灵巧手代码
 
 ```
@@ -264,7 +265,9 @@ def main():
 if __name__ == "__main__":
     main()
 
+```
 ## 案例2：手套控制灵巧手代码
+
 ```
 import asyncio
 import platform
