@@ -11,22 +11,20 @@ width ="800"  align = "center">
 **水星X1轮式人形机器人**：整机共19自由度，它结合了高性能移动底座与先进的双臂协同和感知能力，搭载英伟达Jetson边缘计算核心，和3D机器视觉，为机器人学和具身智能研究和开发提供了强大算力和硬件基础。
 
 <center>
-<<<<<<< HEAD
+
 <img src="./resources/1-ProductIntroduction/image/robot.png" width="400" height="auto" />
-=======
+
 <img src="./resources/1-ProductIntroduction/image/X1.png" width="400" height="auto" />
->>>>>>> 54a21a4989c23035f2bbe3a29328d6ec952dfd99
+
 <br>
 水星Mercury X1轮式人形机器人</center>
 
 **水星B1半人形机器人**：拥有17个自由度和双七轴机械臂，搭载英伟达Jetson边缘计算核心，3D机器视觉，和语音交互能力，是人机交互研究和双臂协同控制研究的首选。
 
 <center>
-<<<<<<< HEAD
 <img src="./resources/1-ProductIntroduction/image/B1.png" width="400" height="auto" />
-=======
 <img src="./resources/1-ProductIntroduction/image/B1.jpg" width="400" height="auto" />
->>>>>>> 54a21a4989c23035f2bbe3a29328d6ec952dfd99
+
 <br>
 水星Mercury B1半人形机器人</center>
 
@@ -37,7 +35,7 @@ width ="800"  align = "center">
 <br>
 水星Mercury A1七轴机械臂</center>
 
-<<<<<<< HEAD
+
 水星系列，不仅是机器人技术的集大成者，更是推动科学探索和教育创新的伙伴。
 
 
@@ -111,6 +109,5 @@ width ="800"  align = "center">
 ## 致谢
 
   - [8 致谢](9-Acknowledgments/README.md)
-=======
+
 水星系列，不仅是机器人技术的集大成者，更是推动科学探索和教育创新的伙伴。
->>>>>>> 54a21a4989c23035f2bbe3a29328d6ec952dfd99
