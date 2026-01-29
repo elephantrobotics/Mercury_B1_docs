@@ -10,7 +10,7 @@
 | Model | Mercury B1 |
 | Product Size | 200\*192.5*537mm |
 | Degrees of Freedom | 17 |
-| Maximum Working Radius | 8 hours |
+| Maximum working duration | 8 hours |
 | Maximum Load | 1KG |
 | Arm Repeatability | ±0.05 mm |
 | Net Weight | 8KG |
