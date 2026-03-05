@@ -26,7 +26,7 @@
 | Microphone Array | Linear 4-microphone, 5 meters 180° pickup |
 | IO | 24V 6 inputs, 6 outputs |
 | Screen | 9-inch Touch Screen |
-| Communication Methods | CAN bus/WIFI/Ethernet/Bluetooth/USB/Serial Port |
+| Communication Methods | WIFI/Ethernet/Bluetooth/USB/Serial Port |
 
 ## 2 Basic Software Function Support
 
