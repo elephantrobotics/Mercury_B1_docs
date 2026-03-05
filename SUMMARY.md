@@ -30,6 +30,7 @@
     * [2 ROS2 基础](6-SDKDevelopment/6.3-ROS2/6.3.2-ROS2_Basics.md)
     * [3 Rviz2 使用](6-SDKDevelopment/6.3-ROS2/6.3.3-Rviz2Introduction.md)
     * [4 基本功能案例](6-SDKDevelopment/6.3-ROS2/6.3.4-BasicFunction.md)
+  * [5.4 基于通信协议包开发](6-SDKDevelopment/6.4-Communication.md)
 * [6 机器人使用场景](7-ExamplesRobotsUsing/README.md)
 
 ## 支持与服务
