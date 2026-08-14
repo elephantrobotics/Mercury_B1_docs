@@ -13,7 +13,7 @@
 | Maximum working duration | 8 hours |
 | Maximum Load | 1KG |
 | Arm Repeatability | ±0.05 mm |
-| Net Weight | 8KG |
+| Net Weight | 11.2KG |
 | Working Voltage | 24V |
 | Repeatability | +-0.05mm |
 | Reduction Mechanism | Harmonic Reducer |
